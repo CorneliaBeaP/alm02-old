@@ -16,6 +16,7 @@ public class RandomFactor {
         }
         return result;
     }
+
     public String haircolorRandomizer(String input) {
         String result = "";
 
@@ -38,6 +39,25 @@ public class RandomFactor {
         return result;
     }
 
+    public String shoesizeRandomizer(int input) {
+        String result = "";
+
+        if (input < 36) {
+
+        } else if (input < 38) {
+
+        } else if (input < 40) {
+
+        } else if (input < 42) {
+
+        } else if (input < 45) {
+
+        } else {
+
+        }
+
+        return result;
+    }
 
 
 }

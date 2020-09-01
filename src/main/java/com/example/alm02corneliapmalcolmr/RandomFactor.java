@@ -9,4 +9,5 @@ public class RandomFactor {
 //    TODO:method för stjärntecken
 //    TODO:method för antal nuvarande partners
 
+
 }

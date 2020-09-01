@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org " lang="ENG">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>FutureSight5000</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-<h1>Hej</h1>
-<span>
-    Förnamn: ->C
-    Efternamn: ->V
-    Hårfärg:->C
-    Skostorlek:->C
-    Stjärntecken:->V
-    Antal nuvarande partners:->V
-<!--    TODO: Submitknapp, person skapas-->
-</span>
+<body style="background-color: bisque">
+
+<div class="card" style="width: 18rem; margin:0 auto; top: 100px; background-color: grey;);
+ color: azure; font-family:'Roboto', sans-serif">
+    <div class="card-body" style="text-align: center; margin: 0 auto;">
+        <h5 class="card-title">FutureSight 5000</h5>
+        <table>
+            <tr>
+                <td>
+                    <p>Tell me about yourself</p>
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName"><br><br>
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName"><br><br>
+                    <label for="hairColor">Hair color:</label>
+                    <input type="text" id="hairColor" name="hairColor"><br><br>
+                    <label for="shoeSize">Shoe size:</label>
+                    <input type="number" id="shoeSize" name="shoeSize"><br><br>
+                    <label for="amountPartners">How many partners:</label>
+                    <input type="number" id="amountPartners" name="amountPartners"><br><br>
+                    <button id="submitButton" class="btn btn-secondary" onclick="">Give me a fortune!</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="fortuneFromTranslator">Welcome to the fortune teller!</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
 </body>
 </html>
+
+
+<!-- Förnamn: ->C
+ Efternamn: ->V
+ Hårfärg:->C
+ Skostorlek:->C
+ Stjärntecken:->V
+ Antal nuvarande partners:->V  !-->
+<!--    TODO: Submitknapp, person skapas-->

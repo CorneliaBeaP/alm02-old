@@ -20,17 +20,17 @@ public class RandomFactor {
     public String haircolorRandomizer(String input) {
         String result = "";
 
-        if (input.toLowerCase().contains("blå")) {
+        if (input.toLowerCase().contains("blue")) {
 //            Gör något
-        } else if (input.toLowerCase().contains("brun")) {
+        } else if (input.toLowerCase().contains("brown")) {
 //            Gör något
-        } else if (input.toLowerCase().contains("blond")) {
+        } else if (input.toLowerCase().contains("blond") || input.toLowerCase().contains("white") || input.toLowerCase().contains("yellow")) {
 
-        } else if (input.toLowerCase().contains("svart")) {
+        } else if (input.toLowerCase().contains("black")) {
 
-        } else if (input.toLowerCase().contains("rosa")) {
+        } else if (input.toLowerCase().contains("pink")) {
 
-        } else if (input.toLowerCase().contains("grå")) {
+        } else if (input.toLowerCase().contains("grey")) {
 
         } else {
 

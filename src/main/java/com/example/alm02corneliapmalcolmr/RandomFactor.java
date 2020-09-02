@@ -55,9 +55,40 @@ public class RandomFactor {
 
     }
 
-    public String randomStringFromZodiacSign(String zodiacSign){
-        //if (zodiacSign.charAt())
-        return null;
+    public String randomStringFromZodiacSign(String zodiacSign) {
+        char c;
+        int vowels = 0;
+        Random random = new Random();
+
+        for (int i = 0; i < zodiacSign.length(); i++) {
+            c = zodiacSign.charAt(i);
+
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o'
+                    || c == 'u' || c == 'y' || c == 'å' || c == 'ä' || c == 'ö')
+                vowels++;
+
+        }
+
+        if (vowels >= 3) {
+            if (random.nextInt(3) + 1 == 3)
+                return "Monday";
+            else if (random.nextInt(3) + 1 == 2)
+                return "Tuesday";
+            else if (random.nextInt(3) + 1 == 1)
+                return "Wednesday";
+        }
+
+        else  {
+            if (random.nextInt(3) + 1 == 3)
+                return "Thursday";
+            else if (random.nextInt(3) + 1 == 2)
+                return "Friday";
+            else if (random.nextInt(3) + 1 == 1)
+                return "Saturday";
+            else if (random.nextInt(3) + 1 == 1)
+                return "Sunday";
+        }
+        return "Today";
     }
 
 

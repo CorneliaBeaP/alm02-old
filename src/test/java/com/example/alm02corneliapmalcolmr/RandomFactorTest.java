@@ -23,4 +23,11 @@ class RandomFactorTest {
         System.out.println(rf.randomStringFromCurrentPartners(2));
         }
     }
+
+    @Test
+    void randomStringFromZodiacSign(){
+        for (int i = 0; i < 100 ; i++) {
+            System.out.println(rf.randomStringFromZodiacSign("vaduren"));
+        }
+    }
 }
